@@ -34,6 +34,7 @@ export default function Signin(){
                 {Google.map((key,index)=>{
                     return(
                         <motion.div
+                        key={index}
                         initial={{scale:0.1,opacity:0}}
                         animate={{scale:1,opacity:1}}
                         transition={{delay:index*0.05}}>{key}</motion.div>
