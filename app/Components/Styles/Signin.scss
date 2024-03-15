@@ -1,4 +1,59 @@
+$bg:#11212D;
+$secondary:#4A5C6A;
+$secondary-low-opacity:#4a5c6a69;
+
 body{
    margin:0px;
    overflow: hidden;
+   background-color: $bg;
+   display: flex;
+   height:100vh;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#container{
+   width:40vw;
+   height:30vh;
+   min-width: 300px;
+   min-height: 200px;
+   border:1px solid $secondary-low-opacity;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+
+   
+   
+
+      #front{
+         justify-content: center;
+         display: flex;
+         position: absolute;
+         align-items: center;
+         height:97%;
+         background-color: $bg;
+         width:99%;
+         color:aliceblue;
+         z-index: 2;
+      }
+      #behind{
+         position: absolute;
+         z-index: 1;
+         height:50%;
+         width:50%;
+         background-color: $secondary;
+         opacity: 0;
+         transition:0.05s;
+         
+
+      }
+      &:hover{
+         #behind{
+            opacity:1;
+         }
+      }
+
 }
