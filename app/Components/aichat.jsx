@@ -14,6 +14,7 @@ export default function Aichat(){
             if(prompt !=  null){
                 const response = await getcontent(prompt);
                  setReply(response);
+                 setPrompt("");
             }
         };
         handlesetreply();

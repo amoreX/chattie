@@ -130,5 +130,15 @@ body{
             width:70px;
             font-size: 14px;
         }
+
+        #ai-chat{
+            #msg-box{
+                width:66vw;
+
+                textarea{
+                    width:40vw;
+                }
+            }
+        }
     }
 }

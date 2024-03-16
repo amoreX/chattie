@@ -9,7 +9,7 @@ export async function getcontent(reply){
     console.log("function yes");
     console.log(process.env.GOOGLE_API_KEY);
     const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
-    const generationConfig = {temperature:0.9,topP:1,topK:1,maxOutputTokens:4096};
+    const generationConfig = {temperature:0.9,topP:1,topK:1,maxOutputTokens:200};
     
     const model=genAI.getGenerativeModel({model:"gemini-pro",generationConfig});
     try{
