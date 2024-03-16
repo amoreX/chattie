@@ -9,7 +9,7 @@ import Chatmsg from "./Chatmsg"
 
 export default function Chats(){
 	const [chat,setChat]=useState("Enjoy chatter ;)");
-	const testnames=["nivedh","cat","ronish"];
+	const testnames=["AI","nivedh","cat","ronish"];
 
 
 	const handlechatchange=(name)=>{
