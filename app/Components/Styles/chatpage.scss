@@ -34,3 +34,50 @@ body{
     }
 
 }
+
+#chats{
+    width:95vw;
+    height:89vh;
+    margin-top: 10px;
+    margin-inline: auto;
+    display: flex;
+    gap:20px;
+
+    #chat-list-styles{
+        display:flex;
+        flex-direction: column;
+        width:200px;
+        // padding-inline: 30px;
+        height:45px;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin-top: 10px;
+        border-radius: 20px;
+        background-color: $secondary-low-opacity;
+        transition:0.28s ease-in-out;
+        border:1px solid ;
+        cursor:pointer;
+        
+    }
+
+    #bar{
+        background-color: $secondary-low-opacity;
+        width:2px;
+        height:90vh;
+    }
+    
+}
+
+@media screen and (max-width:1100px){
+    #nav{
+        font-size: 17px;
+    }
+    #chats{
+        #chat-list-styles{
+            width:70px;
+            font-size: 14px;
+        }
+    }
+}
