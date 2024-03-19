@@ -1,6 +1,6 @@
-import {getcontent} from "../Utils/ai"
+import {getcontent} from "../../Utils/ai"
 import {useState,useEffect} from "react"
-import Textbox from "./msgbox"
+import Textbox from "../msgbox"
 import Reply from "./aitext"
 export default function Aichat(){
     const [prompt,setPrompt]=useState(null);

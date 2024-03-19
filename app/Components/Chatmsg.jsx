@@ -1,5 +1,5 @@
 
-import Aichat from "./aichat"
+import Aichat from "./Ai components/aichat"
 
 export default function Chatmsg({currchat}){
 	return(
